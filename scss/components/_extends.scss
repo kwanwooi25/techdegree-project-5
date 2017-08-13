@@ -1,0 +1,37 @@
+//**************************************************//
+// PLACEHOLDERS
+//**************************************************//
+
+%nav-item-link {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: $font-weight--light;
+  padding: .3em;
+  margin: .5em;
+  color: $grey--light;
+  border-radius: $br--default;
+}
+
+%nav-item-on {
+  color: $white;
+  font-weight: $font-weight--regular;
+  background-color: $color-primary;
+}
+
+%btn {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: .5em;
+  margin: .5em 0;
+  color: $white;
+  border: none;
+  border-radius: $br--default;
+  &:hover {
+    cursor: pointer;
+    opacity: .8;
+  }
+}
+
+//**************************************************//
+// HELPER CLASSES
+//**************************************************//

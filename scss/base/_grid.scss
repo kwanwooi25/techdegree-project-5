@@ -1,0 +1,14 @@
+.grid__row {
+  margin-bottom: 2em;
+}
+
+[class*="grid__col"] {
+  @extend %grid-columns;
+}
+
+@each $class, $color in $theme-colors {
+  .#{$class} {
+    color: $white;
+    background-color: $color;
+  }
+}

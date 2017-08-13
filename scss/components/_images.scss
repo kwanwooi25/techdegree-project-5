@@ -1,0 +1,20 @@
+.img {
+  @extend %center-element;
+  display: block;
+  padding: 1em;
+
+  @include m(logo) {
+    padding: 1em;
+    width: 40%;
+  }
+
+  @include m(avatar) {
+    @extend .img;
+    width: 40%;
+  }
+
+  @include m(frame) {
+    @extend .img;
+
+  }
+}

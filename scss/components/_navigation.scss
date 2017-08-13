@@ -1,0 +1,22 @@
+.nav {
+  @extend %center-element;
+  width: 35%;
+  margin-bottom: em(52px);
+
+  @include e(item) {
+    a {
+      @extend %nav-item-link;
+
+      &:hover {
+        @extend %nav-item-on;
+      }
+    }
+
+    @include m(active) {
+      a {
+        @extend %nav-item-link;
+        @extend %nav-item-on;
+      }
+    }
+  }
+}
