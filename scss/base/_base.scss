@@ -11,25 +11,17 @@ body {
   font-family: $base__font-family;
 	font-weight: $base__font-weight;
   line-height: $base__line-height;
+	max-width: $grid-cont-max-w;
 }
 
-.container {
-  @extend %center-align;
-  @extend %center-element;
+.main-wrapper {
+  @extend .centered;
   width: 90%;
 }
 
-ul {
+nav {
+	@extend .centered;
 	list-style: none;
-}
-
-.headline {
-  @include m(primary) {
-    @extend %headline-primary;
-  }
-  @include m(secondary) {
-    @extend %headline-secondary;
-  }
 }
 
 a {
@@ -46,15 +38,16 @@ p {
 	padding: 0 1.2em;
 }
 
-.description {
-	color: $grey--xlight;
-	font-weight: $font-weight--light;
-	font-size: 1.2rem;
-	padding: 0 1.5em;
-}
-
 blockquote {
-  @extend %blockquote;
+	color: $grey--dark;
+  font-size: 1.3rem;
+  font-weight: $font-weight--xbold;
+  font-style: italic;
+  text-align: left;
+  line-height: 1.5;
+  border-left: .75em solid $color-primary;
+  padding: 0 .5em;
+  margin: 1.5em;
 }
 
 img {

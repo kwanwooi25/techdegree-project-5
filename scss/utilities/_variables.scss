@@ -27,7 +27,6 @@ $grey--xdark   : darken($grey, 20%);
 $color-primary   : #50E3C2;
 $color-secondary : #47DEFF;
 
-
 $ui-colors : (
   default  : $color-secondary,
   success  : #78C58F,
@@ -36,19 +35,19 @@ $ui-colors : (
   info     : #BD9CFF
 );
 
-$theme-colors : (
-  theme__color--1  : #9FADF4,
-  theme__color--2  : #96EAD0,
-  theme__color--3  : #CE86E9,
-  theme__color--4  : #E0B47C,
-  theme__color--5  : #9DE997,
-  theme__color--6  : #838EDC,
-  theme__color--7  : #D9856D,
-  theme__color--8  : #78C0AB,
-  theme__color--9  : #FF9C7E,
-  theme__color--10 : #BD9CFF,
-  theme__color--11 : #FF8F93,
-  theme__color--12 : #7FD079
+$grid-colors : (
+  #9FADF4,
+  #96EAD0,
+  #CE86E9,
+  #E0B47C,
+  #9DE997,
+  #838EDC,
+  #D9856D,
+  #78C0AB,
+  #FF9C7E,
+  #BD9CFF,
+  #FF8F93,
+  #7FD079
 );
 
 
@@ -56,5 +55,15 @@ $theme-colors : (
 
 $br--default : .2em;
 
-// Grid Column Count
-$g-col-count : 12;
+// Grid
+
+$grid-col-width    : 65px;
+$grid-gutter-width : 20px;
+$grid-col-count    : 12;
+$grid-cont-max-w   : 1024px;
+
+// Breakpoints
+
+$break-sm : 1px;
+$break-md : 768px;
+$break-lg : 1024px;

@@ -1,12 +1,10 @@
+// import google font
 @if variable-exists(font-url--google) {
   @import url($font-url--google);
 }
 
-@function em($target, $context: $base__font-size) {
-	@return ($target / $context) * 1em;
-}
-
-@function g-context($g-col-width, $g-col-count ,$g-gutter-width) {
-  $g-context: ($g-col-width * $g-col-count) + ($g-gutter-width * ($g-col-count - 1));
-  @return $g-context;
+// set the context width for the grid
+@function grid-context($grid-col-width, $grid-col-count ,$grid-gutter-width) {
+  $grid-context: ($grid-col-width * $grid-col-count) + ($grid-gutter-width * ($grid-col-count - 1));
+  @return $grid-context;
 }

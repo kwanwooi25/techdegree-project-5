@@ -1,0 +1,36 @@
+.grid {
+
+  @include e(row) {
+    @extend %clearfix;
+    @extend .centered;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5em;
+
+    @include mq(md) {
+      display: flex;
+    }
+
+    // Set a max-width for grid container
+    @include mq(lg) {
+      max-width: $grid-cont-max-w;
+    }
+  }
+  @include e(col) {
+    @include grid-colors;
+    width: 100%;
+    text-align: center;
+    @include mq(md) {
+      @include grid-columns;
+    }
+  }
+}
+
+[class^="grid__col--"] {
+  margin: .5em auto;
+  padding: .5em 0;
+  @include mq(md) {
+    justify-content: space-between;
+    align-self: center;
+  }
+}

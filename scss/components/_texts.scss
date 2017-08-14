@@ -1,0 +1,15 @@
+.headline {
+  @include m(primary) {
+    @extend %headline-primary;
+  }
+  @include m(secondary) {
+    @extend %headline-secondary;
+  }
+}
+
+.description {
+	color: $grey--xlight;
+	font-weight: $font-weight--light;
+	font-size: 1.2rem;
+	padding: 0 1.5em;
+}

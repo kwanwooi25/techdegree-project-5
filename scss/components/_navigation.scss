@@ -1,7 +1,8 @@
 .nav {
-  @extend %center-element;
-  width: 35%;
-  margin-bottom: em(52px);
+  @extend .centered;
+  text-align: center;
+  width: 50%;
+  margin-bottom: 2em;
 
   @include e(item) {
     a {
@@ -16,7 +17,18 @@
       a {
         @extend %nav-item-link;
         @extend %nav-item-on;
+
+        &:hover {
+          @extend %nav-item-on;
+        }
       }
     }
+  }
+
+  @include mq(md) {
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0;
   }
 }

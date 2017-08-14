@@ -1,0 +1,106 @@
+//**************************************************//
+// PLACEHOLDERS
+//**************************************************//
+
+// headline texts
+%headline {
+  &-primary {
+    color: $color-primary;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: $font-weight--bold;
+    line-height: 1.2;
+    padding: 0 1.2em;
+    margin-bottom: 1em;
+  }
+  &-secondary {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: $font-weight--light;
+    margin: 1em 0;
+  }
+}
+
+// nav link item
+%nav-item-link {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: $font-weight--light;
+  padding: .3em;
+  margin: .5em;
+  color: $grey--light;
+  border-radius: $br--default;
+  @include mq(md) {
+    padding: .3em 1em;
+  }
+}
+
+// nav-item :hover, :active
+%nav-item-on {
+  color: $white;
+  background-color: $color-primary;
+}
+
+// image
+%img {
+  @extend .centered;
+  display: block;
+  padding: 1em;
+}
+
+// input
+%input {
+  width: 90%;
+  display: block;
+  font-size: 1.1rem;
+  font-weight: $font-weight--light;
+  padding: .5em;
+  margin: .5em auto 1.5em;
+  border: none;
+  border-bottom: .2em solid $grey--xxlight;
+  border-radius: $br--default;
+  &:focus {
+    outline: none;
+    border-bottom-color: $color-primary;
+  }
+}
+
+// button
+%btn {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: .5em;
+  margin: .5em 0;
+  color: $white;
+  border: none;
+  border-radius: $br--default;
+  &:hover {
+    cursor: pointer;
+    opacity: .8;
+  }
+  @include mq(md) {
+    width: auto;
+    padding: .5em 1.5em;
+    margin-right: 2%;
+  }
+}
+
+// clearfix
+%clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+
+//**************************************************//
+// HELPER CLASSES
+//**************************************************//
+
+.centered {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}

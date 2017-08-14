@@ -1,56 +1,13 @@
 .form {
-  @extend %center-element;
-
   @include e(label) {
     display: block;
+    @include m(hidden) {
+      display: none;
+    }
   }
 
   @include e(input) {
-    @extend %center-element;
-    width: 90%;
-    display: block;
-    font-size: 1.1rem;
-    font-weight: $font-weight--light;
-    padding: .5em;
-    margin: .5em auto 1.5em;
-    border: none;
-    border-bottom: .2em solid $grey--xxlight;
-    border-radius: $br--default;
-
-    &:focus {
-      outline: none;
-      border-bottom-color: $color-primary;
-    }
+    @extend .centered;
+    @extend %input;
   }
-
-}
-
-.btn {
-
-  @each $theme, $color in $ui-colors {
-    @include m(#{$theme}) {
-      @extend %btn;
-      background-color : $color;
-    }
-  }
-  // @include m(default) {
-  //   @extend %btn;
-  //   background-color: $color-secondary;
-  // }
-  // @include m(success) {
-  //   @extend %btn;
-  //   background-color: $color-success;
-  // }
-  // @include m(error) {
-  //   @extend %btn;
-  //   background-color: $color-error;
-  // }
-  // @include m(warning) {
-  //   @extend %btn;
-  //   background-color: $color-warning;
-  // }
-  // @include m(info) {
-  //   @extend %btn;
-  //   background-color: $color-info;
-  // }
 }
