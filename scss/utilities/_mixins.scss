@@ -50,6 +50,7 @@
 @mixin grid-colors {
 	@for $i from 1 through $grid-col-count {
 		&--#{$i}.theme__colors {
+			color: $white;
 			background-color: nth($grid-colors, $i);
 		}
 	}

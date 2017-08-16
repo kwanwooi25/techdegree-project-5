@@ -23,7 +23,10 @@
   border-radius: 0.2em; }
   @media (min-width: 769px) {
     .nav__item a, .nav__item--active a {
-      padding: .3em 1em; } }
+      font-size: 1.1rem;
+      width: auto;
+      padding: .3em 1em;
+      margin: .2em; } }
 
 .nav__item a:hover, .nav__item--active a, .nav__item--active a:hover {
   color: #fff;
@@ -172,28 +175,40 @@ img {
   width: 100%;
   text-align: center; }
   .grid__col--1.theme__colors {
+    color: #fff;
     background-color: #9FADF4; }
   .grid__col--2.theme__colors {
+    color: #fff;
     background-color: #96EAD0; }
   .grid__col--3.theme__colors {
+    color: #fff;
     background-color: #CE86E9; }
   .grid__col--4.theme__colors {
+    color: #fff;
     background-color: #E0B47C; }
   .grid__col--5.theme__colors {
+    color: #fff;
     background-color: #9DE997; }
   .grid__col--6.theme__colors {
+    color: #fff;
     background-color: #838EDC; }
   .grid__col--7.theme__colors {
+    color: #fff;
     background-color: #D9856D; }
   .grid__col--8.theme__colors {
+    color: #fff;
     background-color: #78C0AB; }
   .grid__col--9.theme__colors {
+    color: #fff;
     background-color: #FF9C7E; }
   .grid__col--10.theme__colors {
+    color: #fff;
     background-color: #BD9CFF; }
   .grid__col--11.theme__colors {
+    color: #fff;
     background-color: #FF8F93; }
   .grid__col--12.theme__colors {
+    color: #fff;
     background-color: #7FD079; }
   @media (min-width: 769px) {
     .grid__col--1 {
