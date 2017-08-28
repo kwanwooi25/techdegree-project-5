@@ -171,70 +171,67 @@ img {
   @media (min-width: 1024px) {
     .grid__row {
       max-width: 1024px; } }
-.grid__col {
-  width: 100%;
-  text-align: center; }
-  .grid__col--1.theme__colors {
-    color: #fff;
-    background-color: #9FADF4; }
-  .grid__col--2.theme__colors {
-    color: #fff;
-    background-color: #96EAD0; }
-  .grid__col--3.theme__colors {
-    color: #fff;
-    background-color: #CE86E9; }
-  .grid__col--4.theme__colors {
-    color: #fff;
-    background-color: #E0B47C; }
-  .grid__col--5.theme__colors {
-    color: #fff;
-    background-color: #9DE997; }
-  .grid__col--6.theme__colors {
-    color: #fff;
-    background-color: #838EDC; }
-  .grid__col--7.theme__colors {
-    color: #fff;
-    background-color: #D9856D; }
-  .grid__col--8.theme__colors {
-    color: #fff;
-    background-color: #78C0AB; }
-  .grid__col--9.theme__colors {
-    color: #fff;
-    background-color: #FF9C7E; }
-  .grid__col--10.theme__colors {
-    color: #fff;
-    background-color: #BD9CFF; }
-  .grid__col--11.theme__colors {
-    color: #fff;
-    background-color: #FF8F93; }
-  .grid__col--12.theme__colors {
-    color: #fff;
-    background-color: #7FD079; }
-  @media (min-width: 769px) {
-    .grid__col--1 {
-      width: 6.5%; }
-    .grid__col--2 {
-      width: 15%; }
-    .grid__col--3 {
-      width: 23.5%; }
-    .grid__col--4 {
-      width: 32%; }
-    .grid__col--5 {
-      width: 40.5%; }
-    .grid__col--6 {
-      width: 49%; }
-    .grid__col--7 {
-      width: 57.5%; }
-    .grid__col--8 {
-      width: 66%; }
-    .grid__col--9 {
-      width: 74.5%; }
-    .grid__col--10 {
-      width: 83%; }
-    .grid__col--11 {
-      width: 91.5%; }
-    .grid__col--12 {
-      width: 100%; } }
+.grid__col--1.theme__colors {
+  color: #fff;
+  background-color: #9FADF4; }
+.grid__col--2.theme__colors {
+  color: #fff;
+  background-color: #96EAD0; }
+.grid__col--3.theme__colors {
+  color: #fff;
+  background-color: #CE86E9; }
+.grid__col--4.theme__colors {
+  color: #fff;
+  background-color: #E0B47C; }
+.grid__col--5.theme__colors {
+  color: #fff;
+  background-color: #9DE997; }
+.grid__col--6.theme__colors {
+  color: #fff;
+  background-color: #838EDC; }
+.grid__col--7.theme__colors {
+  color: #fff;
+  background-color: #D9856D; }
+.grid__col--8.theme__colors {
+  color: #fff;
+  background-color: #78C0AB; }
+.grid__col--9.theme__colors {
+  color: #fff;
+  background-color: #FF9C7E; }
+.grid__col--10.theme__colors {
+  color: #fff;
+  background-color: #BD9CFF; }
+.grid__col--11.theme__colors {
+  color: #fff;
+  background-color: #FF8F93; }
+.grid__col--12.theme__colors {
+  color: #fff;
+  background-color: #7FD079; }
+@media (min-width: 769px) {
+  .grid__col--1 {
+    width: 6.5%; }
+  .grid__col--2 {
+    width: 15%; }
+  .grid__col--3 {
+    width: 23.5%; }
+  .grid__col--4 {
+    width: 32%; }
+  .grid__col--5 {
+    width: 40.5%; }
+  .grid__col--6 {
+    width: 49%; }
+  .grid__col--7 {
+    width: 57.5%; }
+  .grid__col--8 {
+    width: 66%; }
+  .grid__col--9 {
+    width: 74.5%; }
+  .grid__col--10 {
+    width: 83%; }
+  .grid__col--11 {
+    width: 91.5%; }
+  .grid__col--12 {
+    width: 100%; } }
 
 [class^="grid__col--"] {
   margin: .5em auto;

@@ -28,10 +28,9 @@
     }
   }
    @else {
-   	@error "Whoops! No value could be retrieved for '#{$breakpoint}'. "
+   	@error "'#{$breakpoint}' is not a valid breakpoint. "
   }
 };
-
 
 // Grid Columns
 @mixin grid-columns {
