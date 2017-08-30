@@ -1,0 +1,10 @@
+// body wrapper
+.container {
+	@extend .centered;
+	width: 90%;
+  color: $grey;
+  font-family: $base__font-family;
+	font-weight: $base__font-weight;
+  line-height: $base__line-height;
+	max-width: $grid-cont-max-w;
+}

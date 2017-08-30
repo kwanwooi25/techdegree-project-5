@@ -6,24 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/application.css">
   </head>
-  <body class="main-wrapper">
+  <body class="container">
 
-    <header class="grid__row">
+    <div class="grid__row">
       <div class="grid__col--3">
         <a class="link" href="/">
           <img class="img--logo" alt="circles logo" src="images/logo.png">
         </a>
       </div>
       <div class="grid__col--9">
-        <nav class="nav">
-          <li class="nav__item--active"><a href="#type">Typography</a></li>
-          <li class="nav__item"><a href="#forms">Form</a></li>
-          <li class="nav__item"><a href="#images">Images</a></li>
-          <li class="nav__item"><a href="#buttons">Buttons</a></li>
-          <li class="nav__item"><a href="#grid">Grid</a></li>
+        <nav class="centered" role="navigation">
+          <ul class="nav">
+            <li class="nav__item"><a href="#type">Typography</a></li>
+            <li class="nav__item"><a href="#forms">Form</a></li>
+            <li class="nav__item"><a href="#images">Images</a></li>
+            <li class="nav__item"><a href="#buttons">Buttons</a></li>
+            <li class="nav__item"><a href="#grid">Grid</a></li>
+          </ul>
         </nav>
       </div>
-    </header>
+    </div>
 
     <div class="grid__row">
       <div class="grid__col--12">
@@ -39,7 +41,7 @@
           <h4 id="type" class="headline--secondary">Typography</h4>
           <h1 class="headline--primary">Take a look at this amazing headline</h1>
           <p>This is a typical paragraph for the UI Kit. <a href="#" class="link">Here is what a link might look like</a>. The typical font family for this kit is Helvetica Neue.  This kit is intended for clean and refreshing web layouts. No jazz hands here, just the essentials to make dreams come true, with minimal clean web design. The kit comes fully equipped with everything from full responsive media styling to buttons to form fields. <em>I enjoy using italics as well from time to time</em>. Fell free to create the most amazing designs ever with this kit. I truly hope you enjoy not only the kit but this amazing paragraph as well. :)</p>
-          <blockquote>You know what really gets me going? A really nice set of block quotes.  That's right, block quotes that say, "Hey, I'm an article you want to read and nurture."</blockquote>
+          <blockquote class="blockquote">You know what really gets me going? A really nice set of block quotes.  That's right, block quotes that say, "Hey, I'm an article you want to read and nurture."</blockquote>
         </div>
       </div>
       <div class="grid__col--4">
@@ -47,9 +49,9 @@
           <legend id="forms" class="headline--secondary">Form Elements</legend>
           <img class="img--avatar" src="images/avatar.png" alt="Avatar">
           <label class="form__label--hidden" for="username">Username:</label>
-          <input class="form__input" type="text" id="username" placeholder="Username" onfocus="placeholder=''" onblur="placeholder='Username'">
+          <input class="form__input" type="text" id="username" placeholder="Username">
           <label class="form__label--hidden" for="password">Password:</label>
-          <input class="form__input" type="password" id="password" placeholder="Password" onfocus="placeholder=''" onblur="placeholder='Password'">
+          <input class="form__input" type="password" id="password" placeholder="Password">
           <button class="btn--default theme__colors" type="submit" value="Login">Login</button>
         </form>
       </div>
@@ -68,13 +70,13 @@
 
     <h4 id="buttons" class="headline--secondary">Buttons</h4>
 
-    <div class="grid__row">
+    <div class="grid__row--12">
       <div class="grid__col--12">
-        <button class="btn--default theme__colors">Default</button>
-        <button class="btn--success theme__colors">Success</button>
-        <button class="btn--error theme__colors">Error</button>
-        <button class="btn--warning theme__colors">Warning</button>
-        <button class="btn--info theme__colors">Info</button>
+        <button class="btn--default theme__colors">default</button>
+        <button class="btn--success theme__colors">success</button>
+        <button class="btn--error theme__colors">error</button>
+        <button class="btn--warning theme__colors">warning</button>
+        <button class="btn--info theme__colors">info</button>
       </div>
     </div>
 

@@ -21,9 +21,19 @@
   }
 }
 
+// links
+%links {
+  color: $color-secondary;
+  text-decoration: none;
+  &:hover {
+    color: lighten($color-secondary, 10%);
+  }
+}
+
 // nav link item
 %nav-item-link {
   display: block;
+  text-decoration: none;
   font-size: 1.2rem;
   font-weight: $font-weight--light;
   padding: .3em;
@@ -48,6 +58,7 @@
 %img {
   @extend .centered;
   display: block;
+  width: 100%;
   padding: 1em;
 }
 
